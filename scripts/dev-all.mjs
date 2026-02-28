@@ -1,16 +1,19 @@
 import { spawn } from "node:child_process";
 
+const isWindows = process.platform === "win32";
+const npmCommand = "npm";
+
 const processes = [
   {
     name: "web",
     color: "\x1b[36m",
-    command: "npm",
+    command: npmCommand,
     args: ["run", "dev", "--workspace", "@it-blog/web"]
   },
   {
     name: "api",
     color: "\x1b[33m",
-    command: "npm",
+    command: npmCommand,
     args: ["run", "dev", "--workspace", "@it-blog/api"]
   }
 ];
@@ -53,7 +56,7 @@ function shutdown(exitCode = 0) {
 for (const processConfig of processes) {
   const child = spawn(processConfig.command, processConfig.args, {
     stdio: ["inherit", "pipe", "pipe"],
-    shell: false,
+    shell: isWindows,
     env: process.env
   });
 
