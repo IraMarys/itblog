@@ -9,17 +9,16 @@
 
 ## Швидкий старт
 
-1. Створи проєкт у Supabase.
-2. Виконай SQL із [`supabase/migrations/001_initial_schema.sql`](/Users/iramaryshchak/Desktop/seo/supabase/migrations/001_initial_schema.sql).
-3. За потреби виконай seed із [`supabase/seed/001_seed.sql`](/Users/iramaryshchak/Desktop/seo/supabase/seed/001_seed.sql).
-4. Скопіюй `.env.example` у `.env` та підстав свої ключі.
-5. Встанови залежності: `npm install`
-6. Запуск: `npm run dev`
+Встанови залежності: `npm install`
+Запуск: `npm run dev`
+
+Тестовий адміністратор:
+
+- Email: `admin@itblog.local`
+- Password: `admin123`
 
 ## Структура
 
 - Публічні сторінки: `/`, `/articles/[slug]`, `/categories/[slug]`, `/authors/[slug]`, `/tags/[slug]`, `/search`
 - SEO-сторінки: `/sitemap.xml`, `/robots.txt`, `/rss.xml`
 - Адмінка: `/admin`, `/admin/articles`, `/admin/categories`, `/admin/tags`, `/admin/authors`
-
-# itblog
