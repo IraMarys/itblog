@@ -3,8 +3,14 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
-    "declaration": true
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"]
 }
-
