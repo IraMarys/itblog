@@ -8,8 +8,9 @@
   ],
   "scripts": {
     "dev": "node scripts/dev-all.mjs",
-    "build": "npm run build --workspace @it-blog/shared && npm run build --workspace @it-blog/api && npm run build --workspace @it-blog/web",
-    "lint": "npm run lint --workspace @it-blog/web && npm run lint --workspace @it-blog/api",
-    "typecheck": "npm run typecheck --workspace @it-blog/shared && npm run typecheck --workspace @it-blog/api && npm run typecheck --workspace @it-blog/web"
+    "build:api": "npm run build --workspace=@it-blog/shared && npm run build --workspace=@it-blog/api",
+    "build:web": "npm run build --workspace=@it-blog/shared && npm run build --workspace=@it-blog/web",
+    "start:api": "npm run start --workspace=@it-blog/api",
+    "start:web": "npm run start --workspace=@it-blog/web"
   }
 }
