@@ -2,12 +2,16 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2022", "DOM"],
-    "moduleResolution": "NodeNext",
-    "module": "NodeNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@it-blog/shared": ["packages/shared/src/index.ts"],
+      "@it-blog/shared/*": ["packages/shared/src/*"]
+    }
   }
 }
