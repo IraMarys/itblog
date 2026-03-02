@@ -8,10 +8,6 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "baseUrl": ".",
-    "paths": {
-      "@it-blog/shared": ["packages/shared/src/index.ts"],
-      "@it-blog/shared/*": ["packages/shared/src/*"]
-    }
+    "baseUrl": "."
   }
 }
