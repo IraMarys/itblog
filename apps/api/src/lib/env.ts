@@ -11,8 +11,7 @@ const envSchema = z.object({
   SUPABASE_STORAGE_BUCKET: z.string().default("article-covers"),
   JWT_SECRET: z.string().min(8),
   NEXT_PUBLIC_SITE_URL: z.string().url().default("http://localhost:3000"),
-  PORT: z.coerce.number().default(4000)
+  PORT: z.coerce.number(),
 });
 
 export const env = envSchema.parse(process.env);
-
